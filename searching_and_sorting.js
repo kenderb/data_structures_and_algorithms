@@ -9,4 +9,24 @@ function linearSearch(array, n) {
   
 }
 
-console.log(linearSearch([1,2,3,4,5,6,7,8,9], 6));
+//console.log(linearSearch([1,2,3,4,5,6,7,8,9], 6));
+
+function binarySearch(array,n) {
+  var lowIndex = 0, highIndex = array.length-1;
+  while(lowIndex <= highIndex) {
+    var midIndex = Math.floor((highIndex+lowIndex) /2);
+
+    if (array[midIndex] == n) {
+      return true;
+    } else if (n > array[midIndex]) {
+      lowIndex = midIndex;
+      console.log(lowIndex);
+    } else {
+      highIndex = midIndex;
+      console.log(highIndex);
+    }
+  }
+  return -1;
+}
+
+console.log(binarySearch([1,2,3,4], 4));
