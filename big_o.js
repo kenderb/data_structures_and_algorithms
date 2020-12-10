@@ -1,3 +1,9 @@
+
+// O(1)
+function addUpTo(n) {
+  return n * (n + 1) / 2;
+}
+
 // O(n)
 function exampleLinear(n) {
   for (let i = 0; i < n; i++) {
