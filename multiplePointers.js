@@ -1,12 +1,9 @@
 //O(n)
 function countUniqueValues(array) {
   let current = 0;
-  let next = 1;
-  if (array.length == 0) return 0;
-  while (next < array.length) {
-    if (array[current] == array[next]) {
-      next ++;
-    } else if (array[current] != array[next]) {
+  if (array.length === 0) return 0;
+  for (let next = 1; next < array.length; next++) {
+    if (array[current] != array[next]) {
       current ++;
       array[current] = array[next];
     }
