@@ -1,5 +1,5 @@
 
-//n(O) anagram solution
+//O(n) anagram solution
 function anagram(s) {
   if (s.length % 2 != 0) return -1;
   const spplitArray = split_in_half(s);
