@@ -5,9 +5,9 @@ function countUniqueValues(array) {
   if (array.length == 0) return 0;
   while (next < array.length) {
     if (array[current] == array[next]) {
-      next += 1;
+      next ++;
     } else if (array[current] != array[next]) {
-      current+=1;
+      current ++;
       array[current] = array[next];
     }
   }
