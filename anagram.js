@@ -32,4 +32,5 @@ function counter(string) {
   }
   return frequencyCounter1;
 }
+
 console.log(anagram('fdhlvosfpafhalll'));
