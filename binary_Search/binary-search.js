@@ -1,5 +1,6 @@
-const binarySearch = () => {
-
+const binarySearch = (array, num) => {
+  const arrayLength = array.length;
+  if (num > arrayLength) return -1;
 };
 
 
