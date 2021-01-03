@@ -9,9 +9,9 @@ function areThereDuplicates() {
 }
 
 function counterObj(array) {
-  let newObj = {};
+  const newObj = {};
   for (const item in array) {
-    newObj[array[item]] = (newObj[array[item]]||0) + 1;
+    newObj[array[item]] = (newObj[array[item]] || 0) + 1;
   }
   return newObj;
 }

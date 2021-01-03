@@ -1,9 +1,10 @@
 function fib(num) {
-  var a = 1, b = 0, temp;
+  let a = 1; let b = 0; let
+    temp;
 
-  while (num >= 0){
+  while (num >= 0) {
     temp = a;
-    a = a + b;
+    a += b;
     b = temp;
     num--;
   }
