@@ -4,14 +4,9 @@ const binarySearch = (array, num) => {
   if (num > array[array.length - 1]) return -1;
   while (min < array[array.length - 1]) {
     const avarage = Math.floor((min + max) / 2);
-    if (num === array[avarage]) {
-      return avarage;
-    }
-    if (array[avarage] < num) {
-      min += 1;
-    } else if (array[avarage] > num) {
-      max -= 1;
-    }
+    if (num === array[avarage]) return avarage;
+    if (array[avarage] < num) min += 1;
+    else if (array[avarage] > num) max -= 1;
   }
   return -1;
 };
