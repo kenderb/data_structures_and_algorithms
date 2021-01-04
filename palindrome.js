@@ -6,7 +6,6 @@ function palindromeIndex(s) {
     const newString = s.slice(0, index) + s.slice(index + 1);
     if (validatePalindrome(newString)) return index;
   }
-
   return -1;
 }
 
