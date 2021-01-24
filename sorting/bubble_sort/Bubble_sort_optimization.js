@@ -1,5 +1,5 @@
 // Optimized BubbleSort with noSwaps
-function bubbleSort(arr) {
+const bubbleSort = (arr) => {
   let noSwaps;
   for (let i = arr.length; i > 0; i -= 1) {
     noSwaps = true;
@@ -16,4 +16,4 @@ function bubbleSort(arr) {
   return arr;
 }
 
-bubbleSort([8, 1, 2, 3, 4, 5, 6, 7]);
+export default bubbleSort;

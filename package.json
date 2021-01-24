@@ -1,0 +1,31 @@
+{
+  "name": "javascript_data_structures_and_algorithms",
+  "version": "1.0.0",
+  "description": "This repo has some practices for Data Structure and algorithms.",
+  "main": "anagram.js",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenderb/JavaScript_data_structures_and_algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenderb/JavaScript_data_structures_and_algorithms/issues"
+  },
+  "homepage": "https://github.com/kenderb/JavaScript_data_structures_and_algorithms#readme"
+}
