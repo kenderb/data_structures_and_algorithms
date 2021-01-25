@@ -48,4 +48,11 @@ describe('SinglyLinkList class', () => {
     const newlist = new SinglyLinkList();
     expect(newlist.pop()).toEqual(undefined);
   });
+  it('should return undefined if the list has 0', () => {
+    const newlist = new SinglyLinkList();
+    const value = 'test';
+    newlist.push(value);
+    newlist.pop();
+    expect(newlist.head).toEqual(null);
+  });
 });

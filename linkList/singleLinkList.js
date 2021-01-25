@@ -21,7 +21,7 @@ export default class SinglyLinkList {
   }
 
   pop() {
-    if (this.length === 0) return undefined;
+    if (!this.head) return undefined;
     let current = this.head;
     let newTail = current;
     while (current.next) {
@@ -31,6 +31,10 @@ export default class SinglyLinkList {
     this.tail = newTail;
     this.tail.next = null;
     this.length -= 1;
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
     return current;
   }
 }
