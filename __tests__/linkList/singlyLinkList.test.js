@@ -104,6 +104,7 @@ describe('SinglyLinkList class', () => {
     newlist.unshift(value2);
     expect(newlist.length).toEqual(1);
   });
+
   it('should be able to unshift an element to the head if there are elements in the list. ', () => {
     const newlist = new SinglyLinkList();
     const value2 = 'test2';
@@ -111,5 +112,32 @@ describe('SinglyLinkList class', () => {
     newlist.unshift(value2);
     newlist.unshift(value3);
     expect(newlist.head.val).toEqual('test3');
+  });
+
+  // get method
+
+  it('should be able to get an element given an index. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    expect(newlist.get(1)).toEqual({ next: null, val: 'test3' });
+  });
+
+  it('should be able to return null if the index is geatter than the length of the list. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.unshift(value2);
+    newlist.unshift(value3);
+    expect(newlist.get(3)).toEqual(null);
+  });
+
+  it('should be able to return null if the index is negative. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    newlist.unshift(value2);
+    expect(newlist.get(-1)).toEqual(null);
   });
 });

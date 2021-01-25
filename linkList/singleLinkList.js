@@ -62,4 +62,16 @@ export default class SinglyLinkList {
     this.length += 1;
     return this;
   }
+
+  get(index) {
+    if (index >= this.length || index < 0) return null;
+    let counter = 0;
+    let value = this.head;
+    while (counter < index) {
+      counter += 1;
+      console.log(value);
+      value = value.next;
+    }
+    return value;
+  }
 }
