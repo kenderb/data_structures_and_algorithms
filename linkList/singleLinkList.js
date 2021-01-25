@@ -41,8 +41,12 @@ export default class SinglyLinkList {
   shift() {
     if (!this.head) return undefined;
     const currentHead = this.head;
-    this.head = this.head.next;
+    this.head = currentHead.next;
     this.length -= 1;
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
     return currentHead;
   }
 }

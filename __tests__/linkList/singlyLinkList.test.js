@@ -74,4 +74,11 @@ describe('SinglyLinkList class', () => {
     const newlist = new SinglyLinkList();
     expect(newlist.shift()).toEqual(undefined);
   });
+  it('shift() should return null if there is no head', () => {
+    const newlist = new SinglyLinkList();
+    const value = 'test';
+    newlist.push(value);
+    newlist.shift();
+    expect(newlist.head).toEqual(null);
+  });
 });
