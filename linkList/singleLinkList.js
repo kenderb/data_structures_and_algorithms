@@ -18,6 +18,6 @@ export default class SinglyLinkList {
     this.length += 1;
     this.tail.next = newNode;
     this.tail = newNode;
-    return this.tail;
+    return this;
   }
 }
