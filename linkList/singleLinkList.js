@@ -10,14 +10,13 @@ export default class SinglyLinkList {
   push(val) {
     const newNode = new Node(val);
     if (this.length === 0) {
-      this.length += 1;
       this.head = newNode;
       this.tail = this.head;
-      return this;
+    } else {
+      this.tail.next = newNode;
+      this.tail = newNode;
     }
     this.length += 1;
-    this.tail.next = newNode;
-    this.tail = newNode;
     return this;
   }
 }
