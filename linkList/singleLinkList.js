@@ -69,7 +69,6 @@ export default class SinglyLinkList {
     let value = this.head;
     while (counter < index) {
       counter += 1;
-      console.log(value);
       value = value.next;
     }
     return value;

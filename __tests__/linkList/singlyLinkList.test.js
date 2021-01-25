@@ -122,7 +122,9 @@ describe('SinglyLinkList class', () => {
     const value3 = 'test3';
     newlist.push(value2);
     newlist.push(value3);
-    expect(newlist.get(1)).toEqual({ next: null, val: 'test3' });
+    newlist.push(4);
+    newlist.push('hello');
+    expect(newlist.get(3).val).toEqual('hello');
   });
 
   it('should be able to return null if the index is geatter than the length of the list. ', () => {
