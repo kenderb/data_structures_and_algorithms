@@ -19,4 +19,7 @@ export default class SinglyLinkList {
     this.length += 1;
     return this;
   }
+  pop() {
+    
+  }
 }
