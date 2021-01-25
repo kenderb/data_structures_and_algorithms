@@ -55,4 +55,23 @@ describe('SinglyLinkList class', () => {
     newlist.pop();
     expect(newlist.head).toEqual(null);
   });
+  it('should be able to remove the fisrt element in the list with a shift method', () => {
+    const newlist = new SinglyLinkList();
+    const value = 'test';
+    newlist.push(value);
+    expect(newlist.shift()).toEqual({ next: null, val: 'test' });
+  });
+  it('should be able to reduce the length of the list with a shift method', () => {
+    const newlist = new SinglyLinkList();
+    const value = 'test';
+    const value2 = 'test2';
+    newlist.push(value);
+    newlist.push(value2);
+    newlist.shift();
+    expect(newlist.length).toEqual(1);
+  });
+  it('shift method return undefined if the list is empty', () => {
+    const newlist = new SinglyLinkList();
+    expect(newlist.shift()).toEqual(undefined);
+  });
 });

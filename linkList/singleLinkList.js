@@ -37,4 +37,11 @@ export default class SinglyLinkList {
     }
     return current;
   }
+  shift(){
+    if (!this.head) return undefined;
+    const currentHead = this.head;
+    this.head = this.head.next;
+    this.length -= 1;
+    return currentHead;
+  }
 }
