@@ -14,6 +14,6 @@ const bubbleSort = (arr) => {
     if (noSwaps) break;
   }
   return arr;
-}
+};
 
 export default bubbleSort;

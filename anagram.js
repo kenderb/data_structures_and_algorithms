@@ -1,4 +1,3 @@
-
 // O(n) anagram solution
 function anagram(s) {
   if (s.length % 2 != 0) return -1;

@@ -1,4 +1,3 @@
-
 const validatePalindrome = (string) => string === string.split('').reverse().join('');
 
 function palindromeIndex(s) {
@@ -8,6 +7,5 @@ function palindromeIndex(s) {
   }
   return -1;
 }
-
 
 console.log(palindromeIndex('aaab'));
