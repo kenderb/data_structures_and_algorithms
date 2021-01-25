@@ -49,6 +49,7 @@ export default class SinglyLinkList {
     }
     return currentHead;
   }
+
   unshift(value) {
     const newNode = new Node(value);
     if (!this.head) {
