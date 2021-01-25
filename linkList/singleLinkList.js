@@ -55,6 +55,11 @@ export default class SinglyLinkList {
     if (!this.head) {
       this.head = newNode;
       this.tail = this.head;
+    } else {
+      newNode.next = this.head;
+      this.head = newNode;
     }
+    this.length += 1;
+    return this;
   }
 }

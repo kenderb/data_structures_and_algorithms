@@ -104,4 +104,12 @@ describe('SinglyLinkList class', () => {
     newlist.unshift(value2);
     expect(newlist.length).toEqual(1);
   });
+  it('should be able to unshift an element to the head if there are elements in the list. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.unshift(value2);
+    newlist.unshift(value3);
+    expect(newlist.head.val).toEqual('test3');
+  });
 });
