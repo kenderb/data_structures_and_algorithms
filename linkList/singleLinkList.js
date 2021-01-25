@@ -37,7 +37,8 @@ export default class SinglyLinkList {
     }
     return current;
   }
-  shift(){
+
+  shift() {
     if (!this.head) return undefined;
     const currentHead = this.head;
     this.head = this.head.next;
