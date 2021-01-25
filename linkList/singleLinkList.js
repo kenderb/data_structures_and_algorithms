@@ -80,4 +80,13 @@ export default class SinglyLinkList {
     foundNode.val = value;
     return true;
   }
+
+  insert(value, index) {
+    if (index > this.length || index < 0) return false;
+    if (index === this.length) {
+      this.push(value);
+      return true;
+    }
+    return true;
+  }
 }

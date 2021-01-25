@@ -179,4 +179,39 @@ describe('SinglyLinkList class', () => {
     newlist.push('hello');
     expect(newlist.set('nope', 2)).toEqual(true);
   });
+  // insert
+
+  it('insert method should be able to return false if the index is greater than the length. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.push('hello');
+    expect(newlist.insert('nope', 5)).toEqual(false);
+  });
+
+  it('insert method should be able to return false if the index is negative. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.push('hello');
+    expect(newlist.insert('nope', -1)).toEqual(false);
+  });
+
+  it('insert method should be able push a node to the end. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.push('hello');
+    newlist.insert('yep', 4);
+    expect(newlist.get(4).value).toEqual('yep');
+  });
 });
