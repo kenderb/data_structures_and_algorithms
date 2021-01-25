@@ -73,4 +73,11 @@ export default class SinglyLinkList {
     }
     return value;
   }
+
+  set(value, index) {
+    const foundNode = this.get(index);
+    if (!foundNode) return false;
+    foundNode.val = value;
+    return true;
+  }
 }

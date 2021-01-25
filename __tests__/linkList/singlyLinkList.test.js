@@ -142,4 +142,41 @@ describe('SinglyLinkList class', () => {
     newlist.unshift(value2);
     expect(newlist.get(-1)).toEqual(null);
   });
+
+  // set method
+
+  it('should be able to set an element given an index and a value. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.push('hello');
+    newlist.set('nope', 3);
+    expect(newlist.get(3).val).toEqual('nope');
+  });
+
+  it('should be able to return false if node is not found. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.push('hello');
+    newlist.set('nope', 5);
+    expect(newlist.set('nope', 5)).toEqual(false);
+  });
+
+  it('should be able to return true if node is found. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.push('hello');
+    expect(newlist.set('nope', 2)).toEqual(true);
+  });
 });
