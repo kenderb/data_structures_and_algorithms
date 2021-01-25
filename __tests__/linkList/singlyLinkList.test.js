@@ -16,6 +16,7 @@ describe('SinglyLinkList class', () => {
     newlist.push(value2);
     expect(newlist.head.next).toEqual(newlist.tail);
   });
+
   it('should put every value as a tail if the list has elements using push', () => {
     const newlist = new SinglyLinkList();
     const value = 'test';
@@ -25,6 +26,7 @@ describe('SinglyLinkList class', () => {
     newlist.push(value2);
     expect(newlist.push(value3).tail).toEqual({ next: null, val: value3 });
   });
+
   it('should be able to remove the last element in the list with pop', () => {
     const newlist = new SinglyLinkList();
     const value = 'test';
@@ -35,6 +37,7 @@ describe('SinglyLinkList class', () => {
     newlist.push(value3);
     expect(newlist.pop()).toEqual({ next: null, val: 'test3' });
   });
+
   it('should be able to remove the last element in the list with pop and add null to the last tail', () => {
     const newlist = new SinglyLinkList();
     const value = 'test';
@@ -44,10 +47,12 @@ describe('SinglyLinkList class', () => {
     newlist.pop();
     expect(newlist.tail.next).toEqual(null);
   });
+
   it('should return undefined if the list is empty', () => {
     const newlist = new SinglyLinkList();
     expect(newlist.pop()).toEqual(undefined);
   });
+
   it('should return undefined if the list has 0', () => {
     const newlist = new SinglyLinkList();
     const value = 'test';
@@ -55,12 +60,14 @@ describe('SinglyLinkList class', () => {
     newlist.pop();
     expect(newlist.head).toEqual(null);
   });
+
   it('should be able to remove the fisrt element in the list with a shift method', () => {
     const newlist = new SinglyLinkList();
     const value = 'test';
     newlist.push(value);
     expect(newlist.shift()).toEqual({ next: null, val: 'test' });
   });
+
   it('should be able to reduce the length of the list with a shift method', () => {
     const newlist = new SinglyLinkList();
     const value = 'test';
@@ -70,15 +77,31 @@ describe('SinglyLinkList class', () => {
     newlist.shift();
     expect(newlist.length).toEqual(1);
   });
+
   it('shift method return undefined if the list is empty', () => {
     const newlist = new SinglyLinkList();
     expect(newlist.shift()).toEqual(undefined);
   });
+
   it('shift() should return null if there is no head', () => {
     const newlist = new SinglyLinkList();
     const value = 'test';
     newlist.push(value);
     newlist.shift();
     expect(newlist.head).toEqual(null);
+  });
+  // unshift
+  it('should be able to add the fisrt element in the list with the unshift method', () => {
+    const newlist = new SinglyLinkList();
+    const value = 'test';
+    newlist.unshift(value);
+    expect(newlist.head).toEqual({ next: null, val: 'test' });
+  });
+
+  it('should be able to increase the length of the list with a unshift method', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    newlist.unshift(value2);
+    expect(newlist.length).toEqual(1);
   });
 });

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1611603218689" clover="3.2.0">
-  <project timestamp="1611603218689" name="All files">
-    <metrics statements="34" coveredstatements="34" conditionals="10" coveredconditionals="10" methods="5" coveredmethods="5" elements="49" coveredelements="49" complexity="0" loc="34" ncloc="34" packages="1" files="2" classes="2"/>
+<coverage generated="1611604316770" clover="3.2.0">
+  <project timestamp="1611604316770" name="All files">
+    <metrics statements="38" coveredstatements="38" conditionals="12" coveredconditionals="11" methods="6" coveredmethods="6" elements="56" coveredelements="55" complexity="0" loc="38" ncloc="38" packages="1" files="2" classes="2"/>
     <file name="node.js" path="D:\proyects\Microverse\JS\JavaScript_data_structures_and_algorithms\linkList\node.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="3" count="16" type="stmt"/>
-      <line num="4" count="16" type="stmt"/>
+      <line num="3" count="18" type="stmt"/>
+      <line num="4" count="18" type="stmt"/>
     </file>
     <file name="singleLinkList.js" path="D:\proyects\Microverse\JS\JavaScript_data_structures_and_algorithms\linkList\singleLinkList.js">
-      <metrics statements="32" coveredstatements="32" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
-      <line num="5" count="11" type="stmt"/>
-      <line num="6" count="11" type="stmt"/>
-      <line num="7" count="11" type="stmt"/>
+      <metrics statements="36" coveredstatements="36" conditionals="12" coveredconditionals="11" methods="5" coveredmethods="5"/>
+      <line num="5" count="13" type="stmt"/>
+      <line num="6" count="13" type="stmt"/>
+      <line num="7" count="13" type="stmt"/>
       <line num="11" count="16" type="stmt"/>
       <line num="12" count="16" type="cond" truecount="2" falsecount="0"/>
       <line num="13" count="9" type="stmt"/>
@@ -41,6 +41,10 @@
       <line num="47" count="2" type="stmt"/>
       <line num="48" count="2" type="stmt"/>
       <line num="50" count="3" type="stmt"/>
+      <line num="53" count="2" type="stmt"/>
+      <line num="54" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="55" count="2" type="stmt"/>
+      <line num="56" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>
