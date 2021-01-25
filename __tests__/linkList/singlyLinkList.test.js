@@ -29,9 +29,11 @@ describe('SinglyLinkList class', () => {
     const newlist = new SinglyLinkList();
     const value = 'test';
     const value2 = 'test2';
+    const value3 = 'test3';
     newlist.push(value);
     newlist.push(value2);
-    expect(newlist.pop()).toEqual(newlist.tail);
+    newlist.push(value3);
+    expect(newlist.pop()).toEqual({ next: null, val: 'test3' });
   });
   it('should be able to remove the last element in the list with pop and add null to the last tail', () => {
     const newlist = new SinglyLinkList();
@@ -41,5 +43,9 @@ describe('SinglyLinkList class', () => {
     newlist.push(value2);
     newlist.pop();
     expect(newlist.tail.next).toEqual(null);
+  });
+  it('should return undefined if the list is empty', () => {
+    const newlist = new SinglyLinkList();
+    expect(newlist.pop()).toEqual(undefined);
   });
 });
