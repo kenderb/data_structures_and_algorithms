@@ -98,14 +98,18 @@ export default class SinglyLinkList {
     return this.addNodeToAnyPosition(value, index);
   }
 
-  remove(index) {
-    if (index > this.length || index < 0) return false;
-    if (index === 0) return !!this.shift();
-    if (index === this.length - 1) return !!this.pop();
+  removeNodeFromAnyPosition(index) {
     const prevNode = this.get(index - 1);
     const currentNode = prevNode.next;
     prevNode.next = currentNode.next;
     this.length -= 1;
     return currentNode;
+  }
+
+  remove(index) {
+    if (index > this.length || index < 0) return false;
+    if (index === 0) return !!this.shift();
+    if (index === this.length - 1) return !!this.pop();
+    return this.removeNodeFromAnyPosition(index);
   }
 }
