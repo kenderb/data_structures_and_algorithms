@@ -81,10 +81,7 @@ export default class SinglyLinkList {
     return true;
   }
 
-  insert(value, index) {
-    if (index > this.length || index < 0) return false;
-    if (index === this.length) return !!this.push(value);
-    if (index === 0) return !!this.unshift(value);
+  addNodeToAnyPosition(value, index) {
     const newNode = new Node(value);
     const prevNode = this.get(index - 1);
     const temp = prevNode.next;
@@ -92,5 +89,12 @@ export default class SinglyLinkList {
     newNode.next = temp;
     this.length += 1;
     return true;
+  }
+
+  insert(value, index) {
+    if (index > this.length || index < 0) return false;
+    if (index === this.length) return !!this.push(value);
+    if (index === 0) return !!this.unshift(value);
+    return this.addNodeToAnyPosition(value, index);
   }
 }
