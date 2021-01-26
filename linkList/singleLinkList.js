@@ -112,4 +112,24 @@ export default class SinglyLinkList {
     if (index === this.length - 1) return !!this.pop();
     return this.removeNodeFromAnyPosition(index);
   }
+
+  switchHeadToTail() {
+    const currentNode = this.head;
+    this.head = this.tail;
+    this.tail = currentNode;
+    return currentNode;
+  }
+
+  reverse() {
+    let node = this.switchHeadToTail();
+    let next;
+    let prev = null;
+    for (let index = 0; index < this.length; index += 1) {
+      next = node.next;
+      node.next = prev;
+      prev = node;
+      node = next;
+    }
+    return this;
+  }
 }

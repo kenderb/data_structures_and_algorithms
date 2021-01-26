@@ -276,6 +276,7 @@ describe('SinglyLinkList class', () => {
     newlist.remove(2);
     expect(newlist.tail.val).toEqual('test3');
   });
+
   it('remove method should be able to delete a node at any position of the list given an index. ', () => {
     const newlist = new SinglyLinkList();
     const value2 = 'test2';
@@ -286,4 +287,16 @@ describe('SinglyLinkList class', () => {
     newlist.remove(1);
     expect(newlist.get(1).val).toEqual(4);
   });
+  // reverse singlyLinkList
+  it('should be able to revers a list with the reverse method. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.reverse();
+    expect(newlist.head.val).toBe(4);
+  });
+
 });
