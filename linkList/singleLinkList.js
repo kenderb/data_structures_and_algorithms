@@ -6,6 +6,7 @@ import Node from './node';
   Searching- O(N)
   Access- O(N)
 */
+
 export default class SinglyLinkList {
   constructor() {
     this.head = null;
