@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1611680574570" clover="3.2.0">
-  <project timestamp="1611680574570" name="All files">
+<coverage generated="1611680945590" clover="3.2.0">
+  <project timestamp="1611680945590" name="All files">
     <metrics statements="85" coveredstatements="85" conditionals="34" coveredconditionals="34" methods="14" coveredmethods="14" elements="133" coveredelements="133" complexity="0" loc="85" ncloc="85" packages="1" files="2" classes="2"/>
     <file name="node.js" path="/home/kender/Documents/microverse/javaScript/JavaScript_data_structures_and_algorithms/linkList/node.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

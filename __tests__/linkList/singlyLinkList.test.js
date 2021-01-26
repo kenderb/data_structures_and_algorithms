@@ -319,5 +319,4 @@ describe('SinglyLinkList class', () => {
     newlist.reverse();
     expect(newlist.get(1).val).toBe('test3');
   });
-
 });
