@@ -97,4 +97,14 @@ export default class SinglyLinkList {
     if (index === 0) return !!this.unshift(value);
     return this.addNodeToAnyPosition(value, index);
   }
+
+  remove(index) {
+
+    if (index === 0) {
+      return this.shift();
+      
+    }
+
+    return false;
+  }
 }

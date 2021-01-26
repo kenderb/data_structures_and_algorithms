@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1611673325834" clover="3.2.0">
-  <project timestamp="1611673325835" name="All files">
-    <metrics statements="64" coveredstatements="64" conditionals="26" coveredconditionals="26" methods="10" coveredmethods="10" elements="100" coveredelements="100" complexity="0" loc="64" ncloc="64" packages="1" files="2" classes="2"/>
+<coverage generated="1611674654160" clover="3.2.0">
+  <project timestamp="1611674654160" name="All files">
+    <metrics statements="67" coveredstatements="66" conditionals="28" coveredconditionals="27" methods="11" coveredmethods="11" elements="106" coveredelements="104" complexity="0" loc="67" ncloc="67" packages="1" files="2" classes="2"/>
     <file name="node.js" path="/home/kender/Documents/microverse/javaScript/JavaScript_data_structures_and_algorithms/linkList/node.js">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="3" count="64" type="stmt"/>
-      <line num="4" count="64" type="stmt"/>
+      <line num="3" count="67" type="stmt"/>
+      <line num="4" count="67" type="stmt"/>
     </file>
     <file name="singleLinkList.js" path="/home/kender/Documents/microverse/javaScript/JavaScript_data_structures_and_algorithms/linkList/singleLinkList.js">
-      <metrics statements="62" coveredstatements="62" conditionals="26" coveredconditionals="26" methods="9" coveredmethods="9"/>
-      <line num="5" count="26" type="stmt"/>
-      <line num="6" count="26" type="stmt"/>
-      <line num="7" count="26" type="stmt"/>
-      <line num="11" count="55" type="stmt"/>
-      <line num="12" count="55" type="cond" truecount="2" falsecount="0"/>
-      <line num="13" count="19" type="stmt"/>
-      <line num="14" count="19" type="stmt"/>
-      <line num="16" count="36" type="stmt"/>
-      <line num="17" count="36" type="stmt"/>
-      <line num="19" count="55" type="stmt"/>
-      <line num="20" count="55" type="stmt"/>
+      <metrics statements="65" coveredstatements="64" conditionals="28" coveredconditionals="27" methods="10" coveredmethods="10"/>
+      <line num="5" count="27" type="stmt"/>
+      <line num="6" count="27" type="stmt"/>
+      <line num="7" count="27" type="stmt"/>
+      <line num="11" count="58" type="stmt"/>
+      <line num="12" count="58" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="20" type="stmt"/>
+      <line num="14" count="20" type="stmt"/>
+      <line num="16" count="38" type="stmt"/>
+      <line num="17" count="38" type="stmt"/>
+      <line num="19" count="58" type="stmt"/>
+      <line num="20" count="58" type="stmt"/>
       <line num="24" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="25" count="3" type="stmt"/>
       <line num="26" count="3" type="stmt"/>
@@ -33,14 +33,14 @@
       <line num="35" count="1" type="stmt"/>
       <line num="36" count="1" type="stmt"/>
       <line num="38" count="3" type="stmt"/>
-      <line num="42" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="43" count="3" type="stmt"/>
-      <line num="44" count="3" type="stmt"/>
-      <line num="45" count="3" type="stmt"/>
-      <line num="46" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="42" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="43" count="4" type="stmt"/>
+      <line num="44" count="4" type="stmt"/>
+      <line num="45" count="4" type="stmt"/>
+      <line num="46" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="47" count="2" type="stmt"/>
       <line num="48" count="2" type="stmt"/>
-      <line num="50" count="3" type="stmt"/>
+      <line num="50" count="4" type="stmt"/>
       <line num="54" count="8" type="stmt"/>
       <line num="55" count="8" type="cond" truecount="2" falsecount="0"/>
       <line num="56" count="5" type="stmt"/>
@@ -71,6 +71,9 @@
       <line num="96" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="97" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="98" count="1" type="stmt"/>
+      <line num="103" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="104" count="1" type="stmt"/>
+      <line num="108" count="0" type="stmt"/>
     </file>
   </project>
 </coverage>
