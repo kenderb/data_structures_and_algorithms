@@ -288,7 +288,7 @@ describe('SinglyLinkList class', () => {
     expect(newlist.get(1).val).toEqual(4);
   });
   // reverse singlyLinkList
-  it('should be able to revers a list with the reverse method. ', () => {
+  it('should be able to reverse the head of a list with the reverse method. ', () => {
     const newlist = new SinglyLinkList();
     const value2 = 'test2';
     const value3 = 'test3';
@@ -297,6 +297,27 @@ describe('SinglyLinkList class', () => {
     newlist.push(4);
     newlist.reverse();
     expect(newlist.head.val).toBe(4);
+  });
+
+  it('should be able to reverse the tail of a list with the reverse method. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    expect(newlist.reverse().tail.val).toBe('test2');
+  });
+
+  it('should be able to revers a midel node of a list with the reverse method. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.reverse();
+    expect(newlist.get(1).val).toBe('test3');
   });
 
 });
