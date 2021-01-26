@@ -83,10 +83,8 @@ export default class SinglyLinkList {
 
   insert(value, index) {
     if (index > this.length || index < 0) return false;
-    if (index === this.length) {
-      this.push(value);
-      return true;
-    }
-    return true;
+    if (index === this.length) return !!this.push(value);
+    if (index === 0) return !!this.unshift(value);
+    return false;
   }
 }

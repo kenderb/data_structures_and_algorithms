@@ -211,7 +211,26 @@ describe('SinglyLinkList class', () => {
     newlist.push(value3);
     newlist.push(4);
     newlist.push('hello');
-    newlist.insert('yep', 4);
-    expect(newlist.get(4).value).toEqual('yep');
+    expect(newlist.insert('yep', 4)).toEqual(true);
+  });
+  it('insert method should be able push a node to the end. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.insert('yep', 3);
+    expect(newlist.get(3).val).toEqual('yep');
+  });
+  it('insert method should be able unshfit a node to the head if the index is zero. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.insert('hi there', 0);
+    expect(newlist.get(0).val).toEqual('hi there');
   });
 });
