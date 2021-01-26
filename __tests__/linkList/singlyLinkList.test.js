@@ -233,4 +233,14 @@ describe('SinglyLinkList class', () => {
     newlist.insert('hi there', 0);
     expect(newlist.get(0).val).toEqual('hi there');
   });
+  it('insert method should be able to insert a node in any position. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.insert('hi there', 1);
+    expect(newlist.get(1).val).toEqual('hi there');
+  });
 });

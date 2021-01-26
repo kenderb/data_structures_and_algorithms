@@ -85,6 +85,12 @@ export default class SinglyLinkList {
     if (index > this.length || index < 0) return false;
     if (index === this.length) return !!this.push(value);
     if (index === 0) return !!this.unshift(value);
-    return false;
+    const newNode = new Node(value);
+    const prevNode = this.get(index - 1);
+    const temp = prevNode.next;
+    prevNode.next = newNode;
+    newNode.next = temp;
+    this.length += 1;
+    return true;
   }
 }
