@@ -99,12 +99,13 @@ export default class SinglyLinkList {
   }
 
   remove(index) {
-
-    if (index === 0) {
-      return this.shift();
-      
-    }
-
-    return false;
+    if (index > this.length || index < 0) return false;
+    if (index === 0) return !!this.shift();
+    if (index === this.length - 1) return !!this.pop();
+    const prevNode = this.get(index - 1);
+    const currentNode = prevNode.next;
+    prevNode.next = currentNode.next;
+    this.length -= 1;
+    return currentNode;
   }
 }

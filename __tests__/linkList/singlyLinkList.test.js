@@ -254,4 +254,36 @@ describe('SinglyLinkList class', () => {
     newlist.remove(0);
     expect(newlist.head.val).toEqual('test3');
   });
+
+  it('remove method should be able to return false if the index is greater than the length. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.push('hello');
+    expect(newlist.remove(10)).toEqual(false);
+  });
+
+  it('remove method should be able to delete a node at the tail of the list given an index. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.remove(2);
+    expect(newlist.tail.val).toEqual('test3');
+  });
+  it('remove method should be able to delete a node at any position of the list given an index. ', () => {
+    const newlist = new SinglyLinkList();
+    const value2 = 'test2';
+    const value3 = 'test3';
+    newlist.push(value2);
+    newlist.push(value3);
+    newlist.push(4);
+    newlist.remove(1);
+    expect(newlist.get(1).val).toEqual(4);
+  });
 });
