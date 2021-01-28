@@ -6,6 +6,7 @@ describe('Queue class', () => {
     const value = 'test';
     newStack.enqueue(value);
     expect(newStack.first.val).toEqual('test');
+
   });
 
   it('should enqueue a value in the Queue and increse the size', () => {
