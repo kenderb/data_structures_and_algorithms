@@ -1,6 +1,6 @@
 import Node from './node';
-/* 
-  Big O of the Singly link List 
+/*
+  Big O of the Singly link List
   insertion - O(1)
   Removal- O(1) or O(N)
   Searching- O(N)
