@@ -8,7 +8,7 @@ export default class Stack {
   }
 
   pop() {
-    if (!this.first) return undefined;
+    if (!this.first) return null;
     const currentFirst = this.first;
     this.first = currentFirst.next;
     this.size -= 1;
@@ -16,7 +16,7 @@ export default class Stack {
       this.first = null;
       this.last = null;
     }
-    return currentFirst;
+    return currentFirst.val;
   }
 
   push(value) {
