@@ -7,7 +7,7 @@ export default class Queue {
     this.size = 0;
   }
 
-  push(val) {
+  enqueue(val) {
     const newNode = new Node(val);
     if (this.size === 0) {
       this.first = newNode;
@@ -20,7 +20,7 @@ export default class Queue {
     return this.size;
   }
 
-  shift() {
+  dequeue() {
     if (!this.first) return null;
     const currentHead = this.first;
     this.first = currentHead.next;
