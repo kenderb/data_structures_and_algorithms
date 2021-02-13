@@ -1,14 +1,14 @@
 var missingNumber = function(nums) {
-  let sortArray = nums.sort();
-  console.log(sortArray);
-  if(sortArray[0] !== 0) return 0;
-  for (let i = 0; i < sortArray.length; i++) {
-    if (sortArray[i+1] !== sortArray[i] + 1) {
-      return sortArray[i]+1;
-    }
+  const numsHas = {};
+  nums.forEach((element, index)=> {
+    numsHas[element] = index;
+  });
+  if (numsHas[0] === undefined) return 0;
+  console.log(numsHas);
+  for (let i = 0; i < nums.length; i++) {
+    const nextNum = i + 1
+    if (numsHas[nextNum] === undefined) return nextNum;
   }
-  
-  return sortArray;
 };
 
 export default missingNumber;
