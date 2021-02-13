@@ -5,7 +5,8 @@ const twoSum = (nums, target) => {
   }
   for (let i = 0; i < nums.length; i++) {
     const rest =  target - nums[i];
-    if(numsHash[rest] && (i !== numsHash[rest])) return [ i, numsHash[rest]]
+    const value = numsHash[rest];
+    if(value && (i !== value)) return [ i, value]
   }
 };
 
