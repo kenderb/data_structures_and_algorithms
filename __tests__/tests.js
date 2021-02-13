@@ -1,5 +1,6 @@
-function findLargest(numbers) {
-  return Math.max(...numbers);
-}
+const a = {};
+const b = a;
+a.v = 1;
+b.v = 2;
 
-console.log(findLargest([1, -28, 88, 200, 8000000]));
+console.log(Math.random() * 10);
