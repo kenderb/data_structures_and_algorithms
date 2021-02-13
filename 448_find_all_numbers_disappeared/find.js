@@ -1,11 +1,9 @@
 var findDisappearedNumbers = function(nums) {
-  const numsHas = {};
+  const numsHas = new Set;
   let findArray = []
-  nums.forEach((num, index )=> {
-    numsHas[num] = index;
-  });
+  nums.forEach((num) => numsHas.add(num));
   for (let i = 1; i <= nums.length; i++) {
-    if(numsHas[i] === undefined) findArray.push(i);
+    if(!numsHas.has(i)) findArray.push(i);
   }
   return findArray;
 };
