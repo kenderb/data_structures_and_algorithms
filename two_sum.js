@@ -1,13 +1,11 @@
 const twoSum = (nums, target) => {
-  const numsHash = {};
+  const SetOfNumbers = new Map();
+  nums.forEach((num, index) => SetOfNumbers.set(num, index));
+  console.log(SetOfNumbers);
   for (let i = 0; i < nums.length; i++) {
-    numsHash[nums[i]] = i;
-  }
-  for (let i = 0; i < nums.length; i++) {
-    const rest =  target - nums[i];
-    const value = numsHash[rest];
-    if(value && (i !== value)) return [ i, value]
+    let LookNumber = target - nums[i];
+    if (SetOfNumbers.has(LookNumber) && nums[i] !== SetOfNumbers.get(LookNumber)) return [i, SetOfNumbers.get(LookNumber)];
   }
 };
 
-console.log(twoSum([1, 3, 4, 2], 6));
+console.log(twoSum([3, 3], 6));
