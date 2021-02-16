@@ -11,9 +11,7 @@ const validate = (array, sequence) => {
 
   // edge case for the array length
   if (arrayIndex.length !== sequence.length) return false;
-  return arrayIndex.every((num, index) => {
-    return index === arrayIndex.length - 1 || num < arrayIndex[index + 1];
-  })
+  return arrayIndex.every((num, index) => (index === arrayIndex.length - 1 || num < arrayIndex[index + 1]))
 }
 
 export default validate;
