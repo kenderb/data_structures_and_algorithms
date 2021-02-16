@@ -1,5 +1,4 @@
 const validate = (array, sequence) => {
-  // Crate empty array and an object
   const arrayHash = {};
   let arrayIndex = []
 
@@ -11,6 +10,8 @@ const validate = (array, sequence) => {
 
   // edge case for the array length
   if (arrayIndex.length !== sequence.length) return false;
+  
+  // return if the index are in secuence or not
   return arrayIndex.every((num, index) => (index === arrayIndex.length - 1 || num < arrayIndex[index + 1]))
 }
 
