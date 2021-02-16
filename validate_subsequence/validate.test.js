@@ -28,4 +28,7 @@ describe('contains Duplicate function', () => {
   it('should return FALSE giving this array [5, 1, 2] with sequence = [2, 3, 4, 6]', () => {
     expect(validate([5, 1, 2], [2, 3, 4, 6])).toBe(false);
   });
+  it('should return TRUE giving this array [30, 4, 5, 6, 7, 8, 1, 56, 89, 9, 87, 7878, 65, 5, 45, 34, 65, 2, 3434, 9999, 9000, 121212, 3, 1212, 234, 43, 43, 4] with sequence = [1, 2, 3, 4]', () => {
+    expect(validate([30, 4, 5, 6, 7, 8, 1, 56, 89, 9, 87, 7878, 65, 5, 45, 34, 65, 2, 3, 9000, 234, 43, 43, 4], [1, 2, 3, 4])).toBe(true)
+  });
 });
