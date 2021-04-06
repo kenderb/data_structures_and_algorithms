@@ -1,4 +1,4 @@
-import Stack from '../Stack/Stack';
+import Stack from './Stack';
 
 describe('Stack class', () => {
   it('should push a value in the stack', () => {
@@ -12,7 +12,7 @@ describe('Stack class', () => {
     const newStack = new Stack();
     const value = 'test';
     newStack.push(value);
-    newStack.push('newvalue');
+    newStack.push('new value');
     newStack.push('one more');
     expect(newStack.size).toEqual(3);
   });
@@ -21,7 +21,7 @@ describe('Stack class', () => {
     const newStack = new Stack();
     const value = 'test';
     newStack.push(value);
-    newStack.push('newvalue');
+    newStack.push('new value');
     newStack.push('one more');
     expect(newStack.pop()).toEqual('one more');
   });
@@ -30,7 +30,7 @@ describe('Stack class', () => {
     const newStack = new Stack();
     const value = 'test';
     newStack.push(value);
-    newStack.push('newvalue');
+    newStack.push('new value');
     newStack.push('one more');
     newStack.pop();
     newStack.pop();
