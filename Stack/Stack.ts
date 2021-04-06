@@ -1,6 +1,10 @@
 import Node from '../linkList/node';
 
 export default class Stack {
+  first: any;
+  last: any;
+  size: number;
+  
   constructor() {
     this.first = null;
     this.last = null;
