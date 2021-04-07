@@ -1,4 +1,4 @@
-require 'main'
+require_relative 'main'
   describe "numRescueBoats" do
     
     it "Returns the right result; input: [1,2], limit = 3 -- result: 1" do
