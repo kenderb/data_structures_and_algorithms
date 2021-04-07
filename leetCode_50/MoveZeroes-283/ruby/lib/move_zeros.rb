@@ -1,7 +1,7 @@
 def moveZeros(arr)
   zero_index = 0
   
-  arr.each_with_index do |number, idx|
+  arr.each_with_index do |number|
     unless number.zero?
       arr[zero_index] = number
       zero_index += 1
