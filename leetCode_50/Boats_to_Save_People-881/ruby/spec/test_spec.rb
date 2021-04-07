@@ -1,36 +1,33 @@
 require 'main'
-
-  describe "moveZeros" do
-  
+  describe "numRescueBoats" do
     
-    it "Returns the right array, input: [0, 1, 3, 5, 0], output: [1, 3, 5, 0, 0]" do
-      input = [0, 1, 3, 5, 0]
-      output =  [1, 3, 5, 0, 0]
-      expect(moveZeros(input)).to eq(output)
+    it "Returns the right result; input: [1,2], limit = 3 -- result: 1" do
+      people = [1,2];
+      limit = 3;
+      result = 1;
+      expect(numRescueBoats(people, limit)).to eq(result)
     end
     
-    it "Should return the right array, input: [0, 0, 3, 0, 32], output: [3, 32, 0, 0, 0]" do
-      input = [0, 0, 3, 0, 32]
-      output =  [3, 32, 0, 0, 0]
-      expect(moveZeros(input)).to eq(output)
+    it "Returns the right result; input: [3,2,2,1], limit = 3 -- result: 3" do
+      people = [3,2,2,1];
+      limit = 3;
+      result = 3;
+      expect(numRescueBoats(people, limit)).to eq(result)
     end
     
-    it "Should return the right array, input: [10, 2, 0, 8, 20], output: [10, 2, 8, 20, 0]" do
-      input = [0, 1, 3, 5, 0]
-      output =  [1, 3, 5, 0, 0]
-      expect(moveZeros(input)).to eq(output)
+    it "Returns the right result; input: [3,5,3,4], limit = 5 -- result: 4" do
+      people = [3,5,3,4];
+      limit = 5;
+      result = 4;
+      expect(numRescueBoats(people, limit)).to eq(result)
     end
     
-    it "Should return the right array, input: [0], output: [0]" do
-      input = [0]
-      output =  [0]
-      expect(moveZeros(input)).to eq(output)
+    it "Returns the right result; input: [44,10,29,12,49,41,23,5,17,26], limit = 50 -- result: 6" do
+      people = [44,10,29,12,49,41,23,5,17,26];
+      limit = 50;
+      result = 6;
+      expect(numRescueBoats(people, limit)).to eq(result)
     end
     
-    it "Should return the right array, input: [], output: []" do
-      input = []
-      output =  []
-      expect(moveZeros(input)).to eq(output)
-    end
     
   end
