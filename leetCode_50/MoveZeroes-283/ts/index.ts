@@ -1,3 +1,4 @@
 export const moveZeros = (arr: number[]): number[] => {
-  return [];
+  let zeroIndex = 0
+  return arr;
 };
